@@ -14,7 +14,7 @@ unpaired tags are open tag
 
 # Heading tag
 
-<h1> it should be used for main headings , dont use it for bold letters used for only heading text 
+it should be used for main headings , dont use it for bold letters used for only heading text 
 
 h1 to h6 have changes from bold and big to less-bold and small
 
