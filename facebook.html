@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <style>
+        body{
+            background-color: rgb(229, 223, 223);
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+        .left{
+            width: 400px;
+            margin-top: 240px;
+            margin-left: 280px;
+        }
+        #p{
+            margin-left: 32px;
+            margin-bottom: 30px;
+            position: relative;
+            bottom: 30px;
+            font-size: 17px;
+            word-spacing: 3px;
+        }
+        .right{
+            margin-left: 900px;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            bottom: 300px;
+            right: 100px;
+            border-radius: 7px;
+            box-shadow: 17px 10px 40px 10px lightgrey;
+        }
+
+        input{
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 88%;
+            height: 50px;
+            border-radius: 6px;
+            padding-left: 10px;
+        }
+        
+        .login{
+            width: 90%;
+            background-color: #0165E1;
+            margin-left: 20px;
+            height: 50px;
+            margin-top: 20px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 6px;
+            transition: 0.9s;
+        }
+       
+        .login:hover{
+            background-color: darkblue;
+            cursor: pointer;
+        }
+        .forget-password{
+            display: flex;
+            justify-content: center;
+            color: #0165E1;
+            transition: 1s;
+        }
+        .forget-password:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        hr{
+            width: 90%;
+        }
+        .create-new-account{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-left: 120px;
+            width: 150px;
+            background-color: rgb(76, 204, 33);
+            padding: 15px;
+            border-radius: 6px;
+            color: rgb(255, 255, 255);
+            font-weight:bolder ;
+            transition: 0.9s;
+        }
+        .create-new-account:hover{
+            background-color: darkgreen;
+            cursor: pointer;
+        }
+        .loginSuccess{
+            width: 500px;
+            display: none;
+            height: 600px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            background-color: white;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="left">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="" width="300px" style="margin-right: 100px;">
+        <p id="p">Connect with friends and the world <br>around you on Facebook.</p>
+    </div>
+    <div class="right">
+        <form action="">
+            <input type="text" name="" id="Email-phone" placeholder="Email address or phone number">
+            <input type="password" name="" id="password" placeholder="password">
+        </form>
+        <div class="login" onclick="validate()">Login</div>
+        <div class="forget-password">
+            <p>Forget password?</p>
+        </div>
+        <hr>
+        <div class="create-new-account">Create new account</div>
+    </div>
+    <script>
+        let email = document.getElementById('Email-phone');
+        let pass = document.getElementById('password');
+        function validate(){
+            if(email.value.trim() === "" || pass.value.trim() === ""){
+                //if i provide wrong password the input field turn red and provide info
+                document.getElementById('Email-phone').style.borderColor = "red";
+                document.getElementById('password').style.borderColor = "red";
+            }
+            else{
+                //login will be implemented later
+                alert("login sucessfully completed");
+            }
+            
+    
+        }
+    </script>
+</body>
+</html>
